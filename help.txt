@@ -1,0 +1,16 @@
+'--source', type=str, help="'Camera'  or 'Video' or 'Photo'", default="Camera"
+'--video', type=str, help="Path to video file", default=None
+'--photo', type=str, help="Path to photo file", default=None'
+--output', type=str, help="Path to output file", default=None
+
+When detect WebCam
+	python main.py --source=Camera --output=out.mp4   //(Optional default is 'output.mp4')
+
+When process Video file:
+	python main.py --source=Video --video=test.mp4
+
+When process Image:
+	python main.py --source=Photo --photo=test.jpg	//file path, process individual image file
+	python main.py --source=Photo --photo=photos	//directory, process all images in directory
+	python main.py --source=Photo --photo=test.jpg --output=output.jpg
+	python main.py --source=Photo --photo=photos --output=output
